@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "deposite",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bank.sol": "BankTester"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bank.sol": {
+			"keccak256": "0x4166ce4e5b94026632d8bd076521a10933bf974c61631f8b05358c9f33009a7d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://38f8c285f21b30b56b49299e9634fc5b0763f0ed9b504ba7447c78527f798a8d",
+				"dweb:/ipfs/QmTEMuKaai5VwWkdag8793aPsBb8Jp4k5LAW8nZoQo9C6k"
+			]
+		}
+	},
+	"version": 1
+}
