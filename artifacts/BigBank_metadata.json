@@ -6,9 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LowerThanMinimumDeposit",
+				"type": "error"
 			},
 			{
 				"inputs": [],
@@ -58,6 +64,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "transferAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
@@ -82,7 +101,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"bank.sol": "Bank"
+			"big-bank.sol": "BigBank"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,6 +121,14 @@
 			"urls": [
 				"bzz-raw://cf525be120ce2725e830806762a71148de6f42d776865e4ec9262227bcea29f8",
 				"dweb:/ipfs/QmagtwC4ZWurnFe9HNhpkZVQpa7q9w7DMbELbVhKM8Wan7"
+			]
+		},
+		"big-bank.sol": {
+			"keccak256": "0x6075e6b57c3ff8ac3c3d90e42980244c6dd60eb609f4c7e9e68cefdf57f6d53d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a79c4fbb79e981e9ac59b0e0bdc500f3742323b03062b0d4f5d7c6af3d176927",
+				"dweb:/ipfs/QmWre35vUqoHLBwh7VBAhjnP5DGt9L2CGAzoXEddo6dHBv"
 			]
 		}
 	},

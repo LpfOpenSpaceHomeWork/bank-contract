@@ -1,31 +1,25 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-struct Whale {
-    address addr;
-    uint depositBalance;
-}
+error OnlyAdministratorCanOperate();
 
 contract Bank {
     mapping(address => uint) public deposits;
     address[3] public top3Whales;
-    address payable private immutable admin;
+    address payable internal admin;
+
+    modifier onlyOwner() {
+        if (msg.sender != admin) {
+            revert OnlyAdministratorCanOperate();
+        }
+        _;
+    }
 
     constructor() {
         admin = payable(msg.sender);
     }
 
-    function getTop3Whales() public view returns(Whale[3] memory whales) {
-        for(uint8 i = 0; i < 3; i++) {
-            whales[i] = Whale({
-                addr: top3Whales[i],
-                depositBalance: deposits[top3Whales[i]]
-            });
-        }
-    }
-
-    function withdraw() public {
-        require(msg.sender == admin, "Only the administrator can withdraw all the deposits");
+    function withdraw() public onlyOwner {
         uint depositsBalance = address(this).balance;
         require(depositsBalance > 0, "No balance remains to withdraw");
         (bool success,) = admin.call{value: depositsBalance}("");
@@ -49,11 +43,15 @@ contract Bank {
         top3Whales = localTop3Whales;
     }
 
-    receive() external payable {
+    function depositFromMsgInfo() internal virtual {
         deposit(msg.sender, msg.value);
     }
 
-    fallback() external payable {
-        deposit(msg.sender, msg.value);
+    receive() external payable virtual {
+        depositFromMsgInfo();
+    }
+
+    fallback() external payable virtual {
+        depositFromMsgInfo();
     }
 }
