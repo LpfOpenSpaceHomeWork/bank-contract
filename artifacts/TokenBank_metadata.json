@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"token-bank.sol": "TokenBank"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"my-erc-20-token.sol": {
+			"keccak256": "0xb91c0ffed8618c0418a83ed50d1fc17bbe8c14543556561d3502cd8c6b8f2534",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3bd1d2e8af18bc238928d7bf987866f62a764d43a9ad18ea70bf120a0ffa03d6",
+				"dweb:/ipfs/QmUFF7WitisGzSrEZzrCKG2hwAdXuiS2BvTc5gC8QBaahB"
+			]
+		},
+		"token-bank.sol": {
+			"keccak256": "0xd4f3b30c40bddb5b7b8b165629c34edf2e6459118dffbe0165563d3974d58708",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cad685b7a86e76a03cf0c91c3bb26045574be4f45a637dbc838e0b85592058e0",
+				"dweb:/ipfs/QmZLgTnp6jVkX5EGgiPu3bkZQGokcvdBhj9xjdhaK2G3n1"
+			]
+		}
+	},
+	"version": 1
+}
