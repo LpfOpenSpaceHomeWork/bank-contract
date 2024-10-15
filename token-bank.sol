@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { MyERC20Token } from "./my-erc-20-token.sol";
+import { TestToken } from "./test-token.sol";
 
 contract TokenBank {
 
-    MyERC20Token public token;
+    TestToken public token;
     mapping(address => uint) public deposits;
 
-    constructor(MyERC20Token _token) {
+    constructor(TestToken _token) {
         token = _token;
     }
 

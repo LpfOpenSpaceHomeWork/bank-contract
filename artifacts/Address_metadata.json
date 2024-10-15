@@ -4,77 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "contract TestToken",
-						"name": "_token",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "deposits",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "token",
-				"outputs": [
-					{
-						"internalType": "contract TestToken",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -88,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"token-bank.sol": "TokenBank"
+			"test-token.sol": "Address"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -151,19 +81,11 @@
 			]
 		},
 		"test-token.sol": {
-			"keccak256": "0x04025d8e7b3502039b46498e5e4de369732b064b7ccf77ba5196e60a7ba28db7",
+			"keccak256": "0x1432c29b792ada1a2ece29d926691b568c5ee819bf2545fbf985553d27f41ad0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cb47090e33b752b3ecbfc738f7d7ab18c0fd3e3cc4728c989a5d9b2ccc007c39",
-				"dweb:/ipfs/Qmc5gRH4HW4YVeYjNdD7qbXyqYW1YHUrHMnvvfMNbiTBEo"
-			]
-		},
-		"token-bank.sol": {
-			"keccak256": "0x3518fcbdcc63af88dcfdfa07fb50f65c182f1a81a40fae966ef14f784edbfb16",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://66d0775802e995e51ceae38c17f7c0de848d55b6aa3cfa74c8b0241d09ffe4ca",
-				"dweb:/ipfs/QmW4UaUuU9MQpYisid2o2gT75bB5konTHAKVgN3BxnAKai"
+				"bzz-raw://3e9d4a47cd1f202c98a824659cfd736699fd009658c13784deb039da8e09569b",
+				"dweb:/ipfs/QmZUAzsPYGNFwxFZPVnoYoRWt38SYZAyCfxwh9fhrhxudD"
 			]
 		}
 	},

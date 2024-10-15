@@ -64,6 +64,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "tokensReceived",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -88,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"token-bank.sol": "TokenBank"
+			"token-bank-v2.sol": "TokenBankV2"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -151,11 +169,19 @@
 			]
 		},
 		"test-token.sol": {
-			"keccak256": "0x04025d8e7b3502039b46498e5e4de369732b064b7ccf77ba5196e60a7ba28db7",
+			"keccak256": "0x1432c29b792ada1a2ece29d926691b568c5ee819bf2545fbf985553d27f41ad0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cb47090e33b752b3ecbfc738f7d7ab18c0fd3e3cc4728c989a5d9b2ccc007c39",
-				"dweb:/ipfs/Qmc5gRH4HW4YVeYjNdD7qbXyqYW1YHUrHMnvvfMNbiTBEo"
+				"bzz-raw://3e9d4a47cd1f202c98a824659cfd736699fd009658c13784deb039da8e09569b",
+				"dweb:/ipfs/QmZUAzsPYGNFwxFZPVnoYoRWt38SYZAyCfxwh9fhrhxudD"
+			]
+		},
+		"token-bank-v2.sol": {
+			"keccak256": "0x2a616f2d1a15a545e58297c871d51eebb2fbd0f52447e4b1c080aa4b4226e5f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d2e5d580a317551df813031969280d355545464e3c5b6e1a9b49584815b3708c",
+				"dweb:/ipfs/QmcvJzvCtZXGdSsX4T6UMznQMMNMEm6JTedhwdLJy3uMVm"
 			]
 		},
 		"token-bank.sol": {
